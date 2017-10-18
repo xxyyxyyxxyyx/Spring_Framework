@@ -1,0 +1,15 @@
+com\domain\Department.class
+com\serviceimpl\ColudServiceImpl.class
+com\domain\OrganizationFactory.class
+com\serviceimpl\EcommerceServiceImpl.class
+com\domain\HumanResourceDept.class
+com\serviceimpl\ReferralRecruitmentServiceImpl.class
+com\service\BusinessService.class
+com\domain\product\ConsumerProduct.class
+com\service\RecruitmentService.class
+com\sun\AutowiredAnnotationApp.class
+com\domain\product\IndustrialProduct.class
+com\serviceimpl\AgencyRecruitmentServiceImpl.class
+com\domain\Organization.class
+com\domain\product\GenericProduct.class
+com\domain\promotion\TradeFair.class

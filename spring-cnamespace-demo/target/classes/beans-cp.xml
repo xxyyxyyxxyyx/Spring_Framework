@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:c="http://www.springframework.org/schema/c"
+>
+    <bean id="myorg" class="com.domain.Organization" c:companyName="BMW" c:yearOfIncorporation="1929" c:address-ref="address"/>
+    <bean id="address" class="com.domain.Address" c:street="Queens rd" c:city="Hong Kong" c:zipcode="852"/>
+</beans>

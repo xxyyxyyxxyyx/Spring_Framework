@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+default-init-method="postConstruct"
+default-destroy-method="preDestroy"
+       xmlns:context="http://www.springframework.org/schema/context"
+>
+    <bean id="myorg" class="com.domain.Organization">
+        <constructor-arg name="companyName" value="${org.companyName}"></constructor-arg>
+        <constructor-arg name="yearOfIncorporation" value="${org.yearOfIncorporation}"></constructor-arg>
+    </bean>
+   <context:component-scan base-package="com.domain"></context:component-scan>
+    <context:property-placeholder location="organization.properties"></context:property-placeholder>
+    <!--<context:annotation-config></context:annotation-config>-->
+</beans>

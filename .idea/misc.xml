@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../SpringFramework111/spring-bean-scope-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springjdbctemplatedemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-pnamespace-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-init-destroy-demo-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-constructor-args-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-component-annotation-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cnamespace-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bean-scope-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-properties-annotation-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springiocdemo1/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

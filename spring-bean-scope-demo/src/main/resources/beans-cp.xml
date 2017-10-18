@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="myorg" class="com.domain.Organization" scope="prototype">
+        <constructor-arg index="0" value="BMW"></constructor-arg>
+        <constructor-arg index="1" value="200"></constructor-arg>
+        <property name="employeeCount" value="200"></property>
+        <property name="postalCode" value="PXCR"></property>
+        <property name="slogan" value="Work hard play hard"></property>
+        <property name="businessService" ref="eCommerService"></property>
+    </bean>
+    <bean id="cloudService" class="com.serviceimpl.ColudServiceImpl">
+
+    </bean>
+    <bean id="eCommerService" class="com.serviceimpl.EcommerceServiceImpl">
+
+    </bean>
+    <bean id="agencyRecruitmentService" class="com.serviceimpl.AgencyRecruitmentServiceImpl">
+
+    </bean>
+    <bean id="referralRecruitmentService" class="com.serviceimpl.ReferralRecruitmentServiceImpl">
+
+    </bean>
+    <bean id="humanResourceDept" class="com.domain.HumanResourceDept">
+
+        <constructor-arg index="0" ref="referralRecruitmentService"/>
+        <constructor-arg index="1" ref="myorg"/>
+        <property name="deptName" value="Human Resources"></property>
+    </bean>
+</beans>

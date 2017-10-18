@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringFramework.iml" filepath="$PROJECT_DIR$/SpringFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-properties-annotation-demo/spring.iml" filepath="$PROJECT_DIR$/spring-properties-annotation-demo/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-bean-scope-demo/spring-bean-scope-demo.iml" filepath="$PROJECT_DIR$/spring-bean-scope-demo/spring-bean-scope-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cnamespace-demo/spring-cnamespace-demo.iml" filepath="$PROJECT_DIR$/spring-cnamespace-demo/spring-cnamespace-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-component-annotation-demo/spring-component-annotation-demo.iml" filepath="$PROJECT_DIR$/spring-component-annotation-demo/spring-component-annotation-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-constructor-args-demo/spring-constructor-args-demo.iml" filepath="$PROJECT_DIR$/spring-constructor-args-demo/spring-constructor-args-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-init-destroy-demo-1/spring-init-destroy-demo-1.iml" filepath="$PROJECT_DIR$/spring-init-destroy-demo-1/spring-init-destroy-demo-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-pnamespace-demo/spring-pnamespace-demo.iml" filepath="$PROJECT_DIR$/spring-pnamespace-demo/spring-pnamespace-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springiocdemo1/springiocdemo1.iml" filepath="$PROJECT_DIR$/springiocdemo1/springiocdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springjdbctemplatedemo/springjdbctemplatedemo.iml" filepath="$PROJECT_DIR$/springjdbctemplatedemo/springjdbctemplatedemo.iml" />
+    </modules>
+  </component>
+</project>
