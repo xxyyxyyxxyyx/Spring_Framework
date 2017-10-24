@@ -5,6 +5,6 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xmlns:p="http://www.springframework.org/schema/p"
 >
-    <bean id="myorg" class="com.domain.Organization" p:companyName="Tesla" p:yearOfIncorporation="2001" p:address-ref="address"/>
+    <bean id="myorg" class="com.Organization" p:companyName="Tesla" p:yearOfIncorporation="2001" p:address-ref="address"/>
     <bean id="address" class="com.domain.Address" p:street="Queens Rd" p:city="Hong Kong" p:zipcode="852" />
 </beans>

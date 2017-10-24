@@ -4,6 +4,8 @@ import com.sun.dao.OrganizatonDao;
 import com.sun.domain.Organization;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.BadSqlGrammarException;
 
 import java.util.List;
 
@@ -15,10 +17,27 @@ public class JdbcTemplateClassicApp1 {
 
         // Crating organization bean
         OrganizatonDao organizatonDao = (OrganizatonDao) applicationContext.getBean("orgDao");
+
+        // Exception in dao layer
+        List<Organization> organizations = null;
+
+        try {
+            organizations = organizatonDao.getAllOrganizations();
+            for(Organization organization:organizations){
+                System.out.println(organization);
+            }
+        }
+        catch (BadSqlGrammarException e){
+            System.out.println("EXCEPTION SQL "+e.getSql());
+        }
+        catch (DataAccessException e){
+            System.out.println("EXCEPTION MESSAGE "+e.getMessage());
+            System.out.println("EXCEPTION CLASS "+e.getClass());
+        }
         //Create seed data
         DaoUtils.createSeedData(organizatonDao);
         // List organizations
-        List<Organization> organizations = organizatonDao.getAllOrganizations();
+//        List<Organization> organizations = organizatonDao.getAllOrganizations();
         DaoUtils.printOrganizations(organizations, DaoUtils.readOperation);
         // Create an organization
         Organization organization = new Organization("Twitter", 2000, "1111", 4000, "We are tweeting");
@@ -38,6 +57,12 @@ public class JdbcTemplateClassicApp1 {
         organizatonDao.update(newTesla);
         organizations = organizatonDao.getAllOrganizations();
         DaoUtils.printOrganizations(organizations,DaoUtils.updateOperation);
+
+        // Delete an organization from the database
+        Organization twitter = organizatonDao.getOrganization(4);
+        organizatonDao.delete(twitter);
+        organizations = organizatonDao.getAllOrganizations();
+        DaoUtils.printOrganizations(organizations,DaoUtils.deleteOperation);
         // Clean up
         organizatonDao.cleanup();
         DaoUtils.printOrganizationsCount(organizatonDao.getAllOrganizations(), DaoUtils.cleanupOperation);

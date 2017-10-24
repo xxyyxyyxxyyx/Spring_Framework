@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jndi" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-handler-mapping" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-java-config-demo" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -13,6 +18,12 @@
         <option value="$PROJECT_DIR$/spring-bean-scope-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-properties-annotation-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springiocdemo1/pom.xml" />
+        <option value="$PROJECT_DIR$/springnamedjdbctemplatedemo/pom.xml" />
+        <option value="$PROJECT_DIR$/FirstSpringMVCProject/pom.xml" />
+        <option value="$USER_HOME$/Desktop/T/pom.xml" />
+        <option value="$PROJECT_DIR$/T/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc-java-config-demo/pom.xml" />
+        <option value="$USER_HOME$/Desktop/New folder/pom.xml" />
       </list>
     </option>
   </component>

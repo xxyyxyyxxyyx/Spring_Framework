@@ -7,7 +7,7 @@ default-init-method="postConstruct"
 default-destroy-method="preDestroy"
        xmlns:context="http://www.springframework.org/schema/context"
 >
-    <bean id="myorg" class="com.domain.Organization">
+    <bean id="myorg" class="com.Organization">
         <constructor-arg name="companyName" value="${org.companyName}"></constructor-arg>
         <constructor-arg name="yearOfIncorporation" value="${org.yearOfIncorporation}"></constructor-arg>
     </bean>

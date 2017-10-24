@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 default-init-method="postConstruct"
 default-destroy-method="preDestroy">
-    <bean id="myorg" class="com.domain.Organization" factory-method="createInstance">
+    <bean id="myorg" class="com.Organization" factory-method="createInstance">
         <constructor-arg index="0" value="BMW"></constructor-arg>
         <constructor-arg index="1" value="200"></constructor-arg>
         <property name="employeeCount" value="200"></property>
@@ -12,7 +12,7 @@ default-destroy-method="preDestroy">
         <property name="slogan" value="Work hard play hard"></property>
     </bean>
 
-    <bean id="myorg2" class="com.domain.Organization" factory-bean="organizationFactory" factory-method="getInstance">
+    <bean id="myorg2" class="com.Organization" factory-bean="organizationFactory" factory-method="getInstance">
         <constructor-arg index="0" value="BMW"></constructor-arg>
         <constructor-arg index="1" value="200"></constructor-arg>
         <property name="employeeCount" value="200"></property>

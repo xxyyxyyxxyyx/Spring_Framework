@@ -45,13 +45,17 @@ public class OrganizationDaoImpl implements OrganizatonDao {
     }
 
     public List<Organization> getAllOrganizations() {
-        String sqlQuery = "SELECT * FROM organization";
+        String sqlQuery = "SELEC * FROM organization";
         List<Organization> organizations = jdbcTemplate.query(sqlQuery, new OrganizationRowMapper());
         return organizations;
     }
 
     public boolean delete(Organization organization) {
-        return false;
+        String sql = "DELETE FROM organization WHERE id = ?";
+        Object[] args = new Object[]{
+                organization.getId()
+        };
+        return jdbcTemplate.update(sql,args) == 1;
     }
 
     public boolean update(Organization organization) {
